@@ -1,6 +1,6 @@
 package ru.vsu.sc.berezin_y_a;
 
-public class Tests {
+public class TestResult {
 
     TestCase testCase = new TestCase();
 

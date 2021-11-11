@@ -6,9 +6,9 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Tests tests = new Tests();
+        TestResult testResult = new TestResult();
 
-        if (!tests.testProgram()) {
+        if (!testResult.testProgram()) {
             System.out.println("Test error");
             return;
         } else {
