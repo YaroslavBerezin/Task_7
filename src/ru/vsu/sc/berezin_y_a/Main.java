@@ -6,9 +6,11 @@ public class Main {
 
     public static void main(String[] args) {
 
-        if (!test.testProgram()) {
+        Tests tests = new Tests();
+
+        if (!tests.testProgram()) {
             System.out.println("Test error");
-            System.exit(1);
+            return;
         } else {
             System.out.println("All tests completed");
         }
@@ -22,8 +24,6 @@ public class Main {
         System.out.println(solution(array));
 
     }
-
-    private static final Test test = new Test();
 
     private static int readLengthOfArray() {
         System.out.println("Filling the array");
