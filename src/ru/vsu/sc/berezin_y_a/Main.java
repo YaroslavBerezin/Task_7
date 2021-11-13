@@ -6,9 +6,9 @@ public class Main {
 
     public static void main(String[] args) {
 
-        TestResult testResult = new TestResult();
+        TestProgram testProgram = new TestProgram();
 
-        if (!testResult.testProgram()) {
+        if (!testProgram.testProgram()) {
             System.out.println("Test error");
             return;
         } else {
@@ -21,7 +21,7 @@ public class Main {
         readArray(array);
 
         System.out.print("Answer: ");
-        System.out.println(solution(array));
+        System.out.println(findCountOfSatisfyingElements(array));
 
     }
 
@@ -40,7 +40,7 @@ public class Main {
         }
     }
 
-    public static int solution(int[] arr) {
+    public static int findCountOfSatisfyingElements(int[] arr) {
         int sum = 0;
         for (int element : arr) {
             sum += element;
