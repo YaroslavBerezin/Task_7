@@ -8,7 +8,7 @@ public class Main {
 
         TestProgram testProgram = new TestProgram();
 
-        if (!testProgram.testProgram()) {
+        if (!testProgram.test()) {
             System.out.println("Test error");
             return;
         } else {

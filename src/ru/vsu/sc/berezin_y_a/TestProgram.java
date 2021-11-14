@@ -4,7 +4,7 @@ public class TestProgram {
 
     TestCase testCase = new TestCase();
 
-    public boolean testProgram() {
+    public boolean test() {
         if (Main.findCountOfSatisfyingElements(testCase.arr1) != 2) {
             System.out.println("Test 1 is not completed");
             return false;
